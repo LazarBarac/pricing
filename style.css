@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: grey;
+    font-size: 12px;
+}
+
+body{
+    background-image: url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/2.%20pricing-component-with-toggle-master/images/bg-top.svg), url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/2.%20pricing-component-with-toggle-master/images/bg-bottom.svg);
+    background-position: 100% 0%, 0% 135%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25%, 25%;
+    background-color:hsl(240, 78%, 98%);
+}
+
+.kontejner1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+.naslovZaToogle{
+    width: 50%;
+    font-weight: 800;
+    margin-bottom: 4%;
+    font-size: 25px;
+    text-align: center;
+}
+.kontejner1a{
+    width: 50%;
+    display: flex;
+    margin-bottom: 6%;
+    align-items: center;
+    justify-content: center;
+}
+.mesecno{
+    font-size: 12px;
+    margin-left: 4%;
+}
+.godisnje{
+    font-size: 12px;
+    margin-right: 4%;
+}
+
+.kontejner2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.kontejner2a{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 7px;
+}
+.kontejner2a.sam{
+    background-color: #9999ff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.kontejner2a.sam h3{
+    color: white;
+}
+.kontejner2a.sam p{
+    color: white;
+}
+.memorija.sam{
+    border-top: 0.5px solid white; 
+}
+.brojKorisnika.sam{
+    border-top: 0.5px solid white; 
+}
+.prenosPodataka.sam{
+    border-bottom: 0.5px solid white; 
+}
+.dugme.sam{
+    background-color: white;
+    color: #9999ff;
+}
+
+.naslovIzbora{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 13px;
+    width: 80%;
+    text-align: center;
+}
+.cena{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    color: black;
+}
+.memorija{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    text-align: center;
+    border-top: 0.5px solid grey; 
+}
+.brojKorisnika{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    text-align: center;
+    border-top: 0.5px solid grey; 
+}
+.prenosPodataka{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    text-align: center;
+    border-top: 0.5px solid grey; 
+    border-bottom: 0.5px solid grey; 
+}
+.dugme{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 80%;
+    background-color: #9999ff;
+    border: transparent;
+    border-radius: 5px;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    color: whitesmoke;
+    outline: none;
+}
+.dugme:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #9999ff;
+    border: 0.5px solid #9999ff;
+}
+.dugme.sam:hover{
+    background-color: #9999ff;
+    color: white;
+    border: 0.1px solid white;
+}
+
+/*TOOGLE*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .45s;
+    transition: .45s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .45s;
+    transition: .45s;
+  }
+  
+  input:checked + .slider {
+    background-color: #9999ff;;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #9999ff;;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @media(max-width:580px){
+      .kontejner1{
+          width: 90%;
+      }
+      .kontejner1a{
+          width: 100%;
+      }
+      .naslovZaToogle{
+          width: 100%;
+      }
+      .kontejner2{
+          width: 90%;
+          flex-direction: column;
+      }
+      .kontejner2a{
+          width: 100%;
+          margin-top: 9%;
+      }
+      .kontejner2a.sam{
+          padding-top: 0;
+          padding-bottom: 0;
+      }
+  }
